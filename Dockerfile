@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 VOLUME ["/var/lib/unifi"]
 
-RUN echo "deb http://www.ubnt.com/downloads/unifi/distros/deb/debian debian ubiquiti" > /etc/apt/sources.list.d/20ubiquiti.list;\
+RUN echo "deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti" > /etc/apt/sources.list.d/20ubiquiti.list;\
     apt-key adv --keyserver keyserver.ubuntu.com --recv C0A52C50;\
     apt-get -q update;\
     apt-get install -qy --force-yes unifi;\
