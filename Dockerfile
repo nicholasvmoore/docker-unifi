@@ -1,3 +1,5 @@
+# Version 0.0.2
+
 FROM ubuntu:latest
 
 VOLUME ["/var/lib/unifi"]
